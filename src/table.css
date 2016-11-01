@@ -285,7 +285,7 @@
       width: 0;
     }
 
-    & td.hidden, th.hidden {
+    & td.is-hidden, th.is-hidden {
       > * {
         visibility: hidden;
       }
