@@ -18,6 +18,8 @@
 @import "./checkbox-group.css";
 @import "./switch.css";
 @import "./select.css";
+@import "./option.css";
+@import "./option-group.css";
 @import "./button.css";
 @import "./button-group.css";
 @import "./table.css";
@@ -40,6 +42,7 @@
 @import "./notification.css";
 @import "./slider.css";
 @import "./loading.css";
+@import "./icon.css";
 @import "./row.css";
 @import "./col.css";
 @import "./upload.css";
