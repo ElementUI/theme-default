@@ -68,10 +68,6 @@
       }
     }
 
-    & > .el-input {
-      display: block;
-    }
-
     @e input {
       border: none;
       outline: none;
