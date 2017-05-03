@@ -1,5 +1,5 @@
 # element-theme-default
-> element component defualt theme.
+> element component default theme.
 
 
 ## Installation
