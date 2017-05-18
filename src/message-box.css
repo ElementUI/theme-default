@@ -161,3 +161,9 @@
     opacity: 0;
   }
 }
+
+@media(max-width: var(--msgbox-width)) {
+  .message-box {
+    width: 95%;
+  }
+}
