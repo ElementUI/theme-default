@@ -23,7 +23,7 @@
     padding-left: 0;
     background-color: var(--menu-item-fill);
     @utils-clearfix;
-    
+
     & li {
       list-style: none;
     }
@@ -33,18 +33,18 @@
 
       & .el-menu-item,
       & .el-submenu__title {
-        color: var(--color-extra-light-silver);
+        color: var(--dark-menu-item-title);
 
         &:hover {
-          background-color: var(--color-extra-light-black);
+          background-color: var(--dark-menu-item-title-hover);
         }
       }
-      
+
       & .el-submenu .el-menu {
-        background-color: var(--color-base-black);
+        background-color: var(--dark-menu-item-submenu-fill);
 
         & .el-menu-item:hover {
-          background-color: var(--color-extra-light-black);
+          background-color: var(--dark-menu-item-submenu-hover-fill);
         }
       }
     }
@@ -76,9 +76,9 @@
           position: absolute;
           top: 65px;
           left: 0;
-          border:1px solid var(--color-base-gray);
+          border: 1px solid var(--menu-item-submenu-menu-border);
           padding: 5px 0;
-          background-color: var(--color-white);
+          background-color: var(--menu-item-submenu-menu-fill);
           z-index: 100;
           min-width: 100%;
           box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12), 0px 0px 6px 0px rgba(0,0,0,0.04);
@@ -91,7 +91,7 @@
         }
 
         & .el-menu-item {
-          background-color: var(--color-white);
+          background-color: var(--menu-item-submenu-menu-item-fill);
           float: none;
           height: 36px;
           line-height: 36px;
@@ -102,7 +102,7 @@
           position: static;
           vertical-align: middle;
           margin-left: 5px;
-          color: var(--color-light-silver);
+          color: var(--menu-item-submenu-icon-arrow-color);
           margin-top: -3px;
         }
       }
@@ -113,7 +113,7 @@
       & > .el-menu-item:hover,
       & > .el-submenu:hover .el-submenu__title,
       & > .el-submenu.is-active .el-submenu__title {
-        border-bottom: 5px solid var(--color-primary);
+        border-bottom: 5px solid var(--menu-item-submenu-menu-item-hover-border);
       }
 
       &.el-menu--dark {
@@ -125,14 +125,14 @@
         & .el-submenu {
           .el-menu-item,
           .el-submenu-title {
-            color: var(--color-extra-light-black);
+            color: var(--dark-item-submenu-menu-item-color);
 
             &:hover {
-              background-color: var(--color-base-gray);
+              background-color: var(--dark-item-submenu-menu-item-hover-color);
             }
           }
           .el-menu-item.is-active {
-            color: var(--color-primary);
+            color: var(--dark-item-submenu-menu-item-active-color);
           }
         }
       }
@@ -140,7 +140,7 @@
   }
   @b menu-item {
     @extend menu-item;
-    
+
     & [class^="el-icon-"] {
       vertical-align: baseline;
       margin-right: 10px;
@@ -152,24 +152,24 @@
       margin-right: 0;
     }
     &:hover {
-      background-color: var(--color-base-gray);
+      background-color: var(--menu-item-hover-fill);
     }
     @when active {
-      color: var(--color-primary);
+      color: var(--menu-item-active-color);
     }
   }
-  
+
   @b submenu {
     @e title {
       position: relative;
       @extend menu-item;
 
       &:hover {
-        background-color: var(--color-base-gray);
+        background-color: var(--menu-item-submenu-fill);
       }
     }
     & .el-menu {
-      background-color: var(--color-light-gray);
+      background-color: var(--menu-item-submenu-menu-fill);
     }
     & .el-menu-item {
       height: 50px;
@@ -177,7 +177,7 @@
       padding: 0 45px;
 
       &:hover {
-        background-color: var(--color-base-gray);
+        background-color: var(--menu-item-submenu-menu-item-hover-fill);
       }
     }
     @e icon-arrow {
@@ -190,7 +190,7 @@
     }
     @when active {
       .el-submenu__title {
-        border-bottom-color: var(--color-primary);
+        border-bottom-color: var(--menu-submenu-title-border-color);
       }
     }
     @when opened {
@@ -213,7 +213,7 @@
       line-height: normal;
       font-size: 14px;
       padding-left: 20px;
-      color: var(--color-light-silver);
+      color: var(--menu-menu-item-group-title-color);
     }
   }
 }
