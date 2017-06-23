@@ -528,10 +528,27 @@
   --menu-item-color: var(--link-color);
   --menu-item-fill: var(--color-extra-light-gray);
   --menu-item-hover-fill: var(--disabled-border-base);
+  --menu-item-active-color: var(--color-primary);
+  --menu-item-submenu-fill: var(--color-base-gray);
+  --menu-item-submenu-menu-fill: var(--color-light-gray);
+  --menu-item-submenu-menu-border: var(--color-base-gray);
+  --menu-item-submenu-menu-item-fill: var(--color-white);
+  --menu-item-submenu-menu-item-hover-fill: var(--color-base-gray);
+  --menu-item-submenu-menu-item-hover-border: var(--color-primary);
+  --menu-item-submenu-icon-arrow-color: var(--color-light-silver);
+  --menu-submenu-title-border-color: var(--color-primary);
+  --menu-menu-item-group-title-color: var(--color-light-silver);
 
   --dark-menu-item-color: var(--link-color);
   --dark-menu-item-fill: var(--color-light-black);
   --dark-menu-item-hover-fill: var(--link-color);
+  --dark-menu-item-title: var(--color-extra-light-silver);
+  --dark-menu-item-title-hover: var(--color-extra-light-black);
+  --dark-menu-item-submenu-fill: var(--color-base-black);
+  --dark-menu-item-submenu-hover-fill: var(--color-extra-light-black);
+  --dark-item-submenu-menu-item-color: var(--color-extra-light-black);
+  --dark-item-submenu-menu-item-hover-color: var(--color-base-gray);
+--dark-item-submenu-menu-item-active-color: var(--color-primary);
 
   /* Rate
   --------------------------*/
