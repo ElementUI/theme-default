@@ -131,11 +131,11 @@
 
     @e original {
       opacity: 0;
+      filter: alpha(opacity=0);
       outline: none;
       position: absolute;
       margin: 0;
       size: 0;
-      left: -999px;
     }
 
     @e label {
